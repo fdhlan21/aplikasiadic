@@ -6,7 +6,8 @@ import DaftarBacaan from './daftar_bacaan.png';
 import Quiz from './quiz.png';
 import Contact from './contact.png';
 import LeftArrow from './left_arrow.png';
+import LogoUniv from './logo_univ.png';
 
 
 
-export {LogoAdic, DukunganPengetahuan, DukunganEmosional, DukunganKeterampilan, DaftarBacaan, Quiz, Contact, LeftArrow};
+export {LogoAdic, DukunganPengetahuan, DukunganEmosional, DukunganKeterampilan, DaftarBacaan, Quiz, Contact, LeftArrow, LogoUniv};

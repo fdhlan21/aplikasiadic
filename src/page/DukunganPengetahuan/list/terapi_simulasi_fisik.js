@@ -1,16 +1,16 @@
-import { View, Text, ScrollView, Dimensions, TouchableOpacity, Image } from 'react-native'
 import React, { useEffect } from 'react'
-import colors from '../../../utils/colors'
+import { Image, Text, TouchableOpacity, View } from 'react-native'
+import Orientation from 'react-native-orientation'
 import Pdf from 'react-native-pdf'
 import { LeftArrow } from '../../../assets'
-import Orientation from 'react-native-orientation'
+import colors from '../../../utils/colors'
 
-export default function Dukunganpengetahuanasi({navigation}) {
+export default function TerapiStimulasFisik({navigation}) {
      const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/1_ASI.pdf'}
+    const source = {uri: 'bundle-assets://pdf/5_terapi_stimulas_fisik.pdf'}
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -33,11 +33,11 @@ export default function Dukunganpengetahuanasi({navigation}) {
     </TouchableOpacity>
     </View>
     <View style={{ top: 0}}>
-      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>ASI</Text>
+      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>Terapi Stimulas Fisik</Text>
     </View>
     </View>
 
- <Pdf style={{flex:1,}} scale={1}   source={source} 
+ <Pdf style={{flex:1, backgroundColor:colors.primary}} scale={1}   source={source} 
     onLoadComplete={(numberofPages, filePath) => {
         console.log(`Number of pages: ${numberofPages}`);
     }}

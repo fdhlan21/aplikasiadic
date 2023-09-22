@@ -36,39 +36,35 @@ export default function ListDukunganPengetahuan({navigation}) {
 
       {/* 2 */}
       <View style={{marginTop:20, }}>
-        <TouchableOpacity style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
+        <TouchableOpacity onPress={() => navigation.navigate("DukunganPengetahuanBayi")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
           <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Memandikan Bayi</Text>
         </TouchableOpacity>
       </View>
 
-
       {/* 3 */}
       <View style={{marginTop:20, }}>
-        <TouchableOpacity style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
+        <TouchableOpacity onPress={() => navigation.navigate("DukunganPijatOksitosin")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
           <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Pijat Oksitosin</Text>
         </TouchableOpacity>
       </View>
 
-
       {/* 4 */}
       <View style={{marginTop:20, }}>
-        <TouchableOpacity style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
+        <TouchableOpacity onPress={() => navigation.navigate("DukunganTekniMenyusui")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
           <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Teknik Menyusui</Text>
         </TouchableOpacity>
       </View>
 
-
       {/* 5 */}
       <View style={{marginTop:20, }}>
-        <TouchableOpacity style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
-          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Terapi Silumasi Fisik</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("DukunganStimulasFisik")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
+          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Terapi Stimulas Fisik</Text>
         </TouchableOpacity>
       </View>
 
-
       {/* 6 */}
       <View style={{marginTop:20, }}>
-        <TouchableOpacity style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
+        <TouchableOpacity onPress={() => navigation.navigate("DukunganKMC")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
           <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>KMC</Text>
         </TouchableOpacity>
       </View>

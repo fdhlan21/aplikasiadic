@@ -2,15 +2,15 @@ import { View, Text, ScrollView, Dimensions, TouchableOpacity, Image } from 'rea
 import React, { useEffect } from 'react'
 import colors from '../../../utils/colors'
 import Pdf from 'react-native-pdf'
-import { LeftArrow } from '../../../assets'
-import Orientation from 'react-native-orientation'
+import Orientation from 'react-native-orientation';
+import { LeftArrow } from '../../../assets';
 
-export default function Dukunganpengetahuanasi({navigation}) {
-     const HandleBack = () => {
+export default function MemandikanBayi({navigation}) {
+        const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/1_ASI.pdf'}
+    const source = {uri: 'bundle-assets://pdf/2_Memandikan_Bayi.pdf'}
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -33,11 +33,11 @@ export default function Dukunganpengetahuanasi({navigation}) {
     </TouchableOpacity>
     </View>
     <View style={{ top: 0}}>
-      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>ASI</Text>
+      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>Memandikan Bayi</Text>
     </View>
     </View>
 
- <Pdf style={{flex:1,}} scale={1}   source={source} 
+ <Pdf style={{flex:1, backgroundColor:colors.primary}} scale={1}   source={source} 
     onLoadComplete={(numberofPages, filePath) => {
         console.log(`Number of pages: ${numberofPages}`);
     }}

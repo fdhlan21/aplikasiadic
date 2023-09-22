@@ -5,12 +5,12 @@ import Pdf from 'react-native-pdf'
 import { LeftArrow } from '../../../assets'
 import Orientation from 'react-native-orientation'
 
-export default function Dukunganpengetahuanasi({navigation}) {
+export default function KmcPdf({navigation}) {
      const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/1_ASI.pdf'}
+    const source = {uri: 'bundle-assets://pdf/6_KMC.pdf'}
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -33,11 +33,11 @@ export default function Dukunganpengetahuanasi({navigation}) {
     </TouchableOpacity>
     </View>
     <View style={{ top: 0}}>
-      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>ASI</Text>
+      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>KMC</Text>
     </View>
     </View>
 
- <Pdf style={{flex:1,}} scale={1}   source={source} 
+ <Pdf style={{flex:1, backgroundColor:colors.primary}} scale={1}   source={source} 
     onLoadComplete={(numberofPages, filePath) => {
         console.log(`Number of pages: ${numberofPages}`);
     }}
@@ -50,7 +50,7 @@ export default function Dukunganpengetahuanasi({navigation}) {
     onPressLink={(uri) => {
         console.log(`Link pressed: ${uri}`);
     }}
- 
+
     horizontal={true}
 />
    

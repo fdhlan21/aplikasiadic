@@ -1,11 +1,16 @@
+import { useRoute } from '@react-navigation/native'
 import React, { useEffect, useState } from 'react'
-import { Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View, Linking } from 'react-native'
+import { Alert, Button, Dimensions, Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Carousel from 'react-native-snap-carousel'
 import { Contact, DaftarBacaan, DukunganEmosional, DukunganKeterampilan, DukunganPengetahuan, LogoAdic, Quiz, Slider1, Slider2, Slider3, Slider4 } from '../../assets'
+import { MYAPP, getData, storeData } from '../../localstorage/local'
 import colors from '../../utils/colors'
-import { getData } from '../../localstorage/local'
+
 
 export default function HomeScreen({navigation}) {
+   const route = useRoute();
+   const username = route.params?.username || 'Guest';
+
      const { width } = Dimensions.get('window');
     const data = [
     { id: 1, source: Slider1 },
@@ -45,17 +50,17 @@ getData("user").then(response => {
 console.log('TES CUY');
 },[])
 
-  const signOut = () => {
-
-        storeData('user',null);
+ const handleLogout = () => {
+    // Menghapus parameter username sementara
+   storeData('user',null);
         navigation.reset({
           index:0,
-          routes:[{name:'HalamanSplash'}]
+          routes:[{name:'Splash'}]
         })
         Alert.alert(MYAPP,'Berhasil Logout');
     
-  }
- 
+  };
+
 
    const renderItem = ({ item }) => {
     return (
@@ -73,8 +78,8 @@ console.log('TES CUY');
 
     <View style={{flexDirection:'row', justifyContent:'space-between'}}>
     <View style={{padding:10, }}>
-        <Text style={{fontSize:13, fontFamily:'Poppins-SemiBold'}}>Selamat Datang</Text>
-        <Text style={{fontSize:12, fontFamily:'Poppins-Regular'}}>{datauser.nama}</Text>
+        <Text style={{fontSize:15, fontFamily:'Poppins-SemiBold'}}>Selamat Datang</Text>
+         <Text style={{fontFamily:'Poppins-Regular', fontSize: 12,}}>{username || 'Guest'}</Text>
     </View>
     <View style={{padding:10, top: -30}}>
         <Image style={{width:100, height:100}} source={LogoAdic} />
@@ -108,7 +113,7 @@ console.log('TES CUY');
 </TouchableOpacity>
 
 {/* 2 */}
-<TouchableOpacity style={{alignItems:'center'}}>
+<TouchableOpacity onPress={() => navigation.navigate("DukunganEmosional")} style={{alignItems:'center'}}>
 <View style={{padding:10, height:60, width:60, borderRadius:5, borderWidth:1, backgroundColor:colors.secondary}}>
 <Image style={{height:40, width:40}} source={DukunganEmosional}  />
 </View>
@@ -129,7 +134,7 @@ console.log('TES CUY');
  <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:'15%'}}>
 
 {/* 1 */}
-<TouchableOpacity style={{alignItems:'center'}}>
+<TouchableOpacity onPress={() => navigation.navigate("DaftarBacaan")} style={{alignItems:'center'}}>
 <View style={{padding:10, height:60, width:60, borderRadius:5, borderWidth:1, backgroundColor:colors.secondary}}>
 <Image style={{height:40, width:40}} source={DaftarBacaan}  />
 </View>
@@ -158,12 +163,11 @@ console.log('TES CUY');
    </View>
 
     </View>
-    </ScrollView>
-
-    <View style={{alignItems:'center', marginTop: '-50%'}}>
+    <View style={{alignItems:'center', marginTop:-50}}>
         <Image style={{width:300, height:300}} source={LogoAdic}/>
     </View>
-
+    </ScrollView>
+  <Button  title="Logout" onPress={handleLogout} color={colors.secondary}  />
 
     </View>
   )
@@ -201,5 +205,11 @@ imageContainer: {
     height: 8,
     borderRadius: 4,
     backgroundColor: 'gray', // Ubah warna sesuai kebutuhan Anda
+  },
+
+    button: {
+    backgroundColor: 'red',
+    padding: 10,
+    borderRadius: 5,
   },
 })

@@ -1,10 +1,10 @@
-import { View, Text, Image, ScrollView, TextInput, TouchableOpacity, Modal, Button, Alert } from 'react-native'
-import React, { useState } from 'react'
-import colors from '../../utils/colors'
-import { LogoAdic } from '../../assets'
-import { LoginURL, MYAPP, RegisterURL, storeData } from '../../localstorage/local';
-import { showMessage } from 'react-native-flash-message';
 import axios from 'axios';
+import React, { useState } from 'react';
+import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { showMessage } from 'react-native-flash-message';
+import { LogoAdic } from '../../assets';
+import { RegisterURL, storeData } from '../../localstorage/local';
+import colors from '../../utils/colors';
 
 export default function LoginScreen({navigation}) {
 
@@ -40,7 +40,7 @@ const HandleLogin = () => {
         setLoading(false);
         console.log(response.data);
         storeData('user', response.data);
-        navigation.replace("HomeScreen");
+        navigation.replace("HomeScreen",  { username: form.nama });
         showMessage({
             type:'default',
             color:'white',
@@ -49,22 +49,14 @@ const HandleLogin = () => {
         })
     })  
     .catch(error => {
-        setLoading(false)
-        console.error(error.response);
-        showMessage({
-            type:'default',
-            color:'white',
-            backgroundColor:colors.error,
-            message:error.response.data.message,
-        })
-    });
-    
+        console.error(error)
+    })
     }
 
 }
 
 const HandleGuest = () => {
-    navigation.navigate("HomeScreen");
+    navigation.navigate("HomeScreen",  { username: 'Guest' });
     showMessage({
         type:'default',
         color:'white',

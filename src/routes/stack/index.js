@@ -1,16 +1,22 @@
 // In App.js in a new project
 
-import * as React from 'react';
-import { View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreen from '../../page/Splash';
-import HomeScreen from '../../page/Home';
-import LoginScreen from '../../page/login';
-import ListDukunganPengetahuan from '../../page/DukunganPengetahuan/list/list.index';
-import Dukunganpengetahuanasi from '../../page/DukunganPengetahuan/list/asi';
+import * as React from 'react';
 import ListDukunganKeterampilan from '../../page/DukunganKeterampilan/list';
+import Dukunganpengetahuanasi from '../../page/DukunganPengetahuan/list/asi';
+import KmcPdf from '../../page/DukunganPengetahuan/list/kmc_pdf.';
+import ListDukunganPengetahuan from '../../page/DukunganPengetahuan/list/list.index';
+import MemandikanBayi from '../../page/DukunganPengetahuan/list/memandikan_bayi';
+import PijatOksitosin from '../../page/DukunganPengetahuan/list/pijat_oksitosin';
+import TeknikMenyusui from '../../page/DukunganPengetahuan/list/teknik_menyusui';
+import TerapiStimulasFisik from '../../page/DukunganPengetahuan/list/terapi_simulasi_fisik';
+import HomeScreen from '../../page/Home';
+import SplashScreen from '../../page/Splash';
 import ContactScreen from '../../page/contact';
+import DaftarBacaan from '../../page/daftarbaca';
+import DukunganEmosional from '../../page/dukunganemosional/dukungan_emisonal';
+import LoginScreen from '../../page/login';
+
 
 
 
@@ -28,6 +34,13 @@ function MyStack() {
         <Stack.Screen name="DukunganPengetahuanasi" component={Dukunganpengetahuanasi} options={{headerShown:false}}/>
         <Stack.Screen name="ListDukunganKeterampilan" component={ListDukunganKeterampilan} options={{headerShown:false}}/>
         <Stack.Screen name="ContactScreen" component={ContactScreen} options={{headerShown:false}}/>
+        <Stack.Screen name="DukunganPengetahuanBayi" component={MemandikanBayi} options={{headerShown:false}}/>
+        <Stack.Screen name="DukunganPijatOksitosin" component={PijatOksitosin} options={{headerShown:false}}/>
+        <Stack.Screen name="DukunganTekniMenyusui" component={TeknikMenyusui} options={{headerShown:false}}/>
+        <Stack.Screen name="DukunganStimulasFisik" component={TerapiStimulasFisik} options={{headerShown:false}}/>
+        <Stack.Screen name="DukunganKMC" component={KmcPdf} options={{headerShown:false}}/>
+        <Stack.Screen name="DukunganEmosional" component={DukunganEmosional} options={{headerShown:false}}/>
+        <Stack.Screen name="DaftarBacaan" component={DaftarBacaan} options={{headerShown:false}}/>
 
 
       </Stack.Navigator>

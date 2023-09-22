@@ -1,16 +1,16 @@
-import { View, Text, ScrollView, Dimensions, TouchableOpacity, Image } from 'react-native'
 import React, { useEffect } from 'react'
-import colors from '../../../utils/colors'
-import Pdf from 'react-native-pdf'
-import { LeftArrow } from '../../../assets'
+import { Image, Text, TouchableOpacity, View } from 'react-native'
 import Orientation from 'react-native-orientation'
+import Pdf from 'react-native-pdf'
+import { LeftArrow } from '../../assets'
+import colors from '../../utils/colors'
 
-export default function Dukunganpengetahuanasi({navigation}) {
+export default function DukunganEmosional({navigation}) {
      const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/1_ASI.pdf'}
+    const source = {uri: 'bundle-assets://pdf/dukungan_emosional.pdf'}
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -24,7 +24,7 @@ export default function Dukunganpengetahuanasi({navigation}) {
 
 
   return (
-    <View style={{flex:1, backgroundColor:colors.primary}}>
+    <View style={{flex:1, backgroundColor:'#8EB4E3'}}>
         {/* TOPBAR */}
     <View style={{padding:10, backgroundColor:colors.secondary,  marginTop:-30, borderBottomLeftRadius:5, borderBottomRightRadius:5,}}>
     <View style={{top: 25}}>
@@ -33,11 +33,11 @@ export default function Dukunganpengetahuanasi({navigation}) {
     </TouchableOpacity>
     </View>
     <View style={{ top: 0}}>
-      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>ASI</Text>
+      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>Dukungan Emosional</Text>
     </View>
     </View>
 
- <Pdf style={{flex:1,}} scale={1}   source={source} 
+ <Pdf style={{flex:1, backgroundColor:'#8EB4E3'}} scale={1}   source={source} 
     onLoadComplete={(numberofPages, filePath) => {
         console.log(`Number of pages: ${numberofPages}`);
     }}

@@ -51,7 +51,7 @@ export default function ListDukunganKeterampilan({navigation}) {
 
       {/* 4 */}
       <View style={{marginTop:20, }}>
-        <TouchableOpacity style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
+        <TouchableOpacity onPress={() => Linking.openURL('http://bit.ly/46gsc7m')} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
           <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>KMC</Text>
         </TouchableOpacity>
       </View>
