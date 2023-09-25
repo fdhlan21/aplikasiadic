@@ -29,14 +29,7 @@ export default function ContactScreen({navigation}) {
     {/* IMAGE LOGO */}
     <View style={{padding:10, alignItems:'center', top: -10}}>
       <Image style={{height:200, width:200 ,}} source={LogoUniv}/>
-    </View>
-    {/* INFO WA  */}
-
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5,}}>
-    <Text style={{fontFamily:'Poppins-SemiBold'}}>Nomor WA : <Text style={{fontFamily:'Poppins-Regular'}}>+62 898-6611-977</Text> </Text>
-    </View>
-
-    
+    </View> 
     {/* NAMA TIM  */}
 
     <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, marginTop: 10,}}>
@@ -69,6 +62,33 @@ Universitas Jenderal Soedirman</Text> </Text>
     <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, marginTop: 10,}}>
     <Text style={{fontFamily:'Poppins-SemiBold'}}>Email : <Text style={{fontFamily:'Poppins-Regular',}}>eni.rahmawati@unsoed.ac.id</Text> </Text>
     </View>
+
+
+      
+    {/* SPONSSOR  */}
+
+    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, marginTop: 10, marginTop: 50
+    }}>
+    <Text style={{fontFamily:'Poppins-SemiBold', textAlign:'center'}}>Sponsor</Text>
+    </View>
+
+    {/* SPONSSOR  */}
+
+    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, marginTop: 10, marginTop: 10
+    }}>
+    <Text style={{fontFamily:'Poppins-SemiBold', textAlign:'left'}}>LEMBAGA PENELITIAN DAN PENGABDIAN KEPADA MASYARAKAT (LPPM)
+UNIVERSITAS JENDERAL SOEDIRMAN{'\n'}
+{'\n'}
+Kampus Grendeng Jl. Dr. Suparno Grendeng Purwokerto 53122{'\n'}
+{'\n'}
+Telpon/Fax  (0281)  625739{'\n'}
+{'\n'}
+Website : <Text style={{fontFamily:'Poppins-SemiBold', color:'blue'}} onPress={() => Linking.openURL('https://lppm.unsoed.ac.id/')}>lppm.unsoed.ac.id</Text>{'\n'}
+{'\n'}
+email : lppm@unsoed.ac.id</Text>
+    </View>
+
+
 
 
     </View>

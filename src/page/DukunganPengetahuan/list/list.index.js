@@ -65,7 +65,7 @@ export default function ListDukunganPengetahuan({navigation}) {
       {/* 6 */}
       <View style={{marginTop:20, }}>
         <TouchableOpacity onPress={() => navigation.navigate("DukunganKMC")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
-          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>KMC</Text>
+          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>KMC(Metode Kangguru)</Text>
         </TouchableOpacity>
       </View>
 

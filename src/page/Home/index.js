@@ -2,7 +2,7 @@ import { useRoute } from '@react-navigation/native'
 import React, { useEffect, useState } from 'react'
 import { Alert, Button, Dimensions, Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Carousel from 'react-native-snap-carousel'
-import { Contact, DaftarBacaan, DukunganEmosional, DukunganKeterampilan, DukunganPengetahuan, LogoAdic, Quiz, Slider1, Slider2, Slider3, Slider4 } from '../../assets'
+import { Contact, DaftarBacaan, DukunganEmosional, DukunganKeterampilan, DukunganPengetahuan, LogOut, LogoAdic, LogoSponsor, Quiz, Slider1, Slider2, Slider3, Slider4 } from '../../assets'
 import { MYAPP, getData, storeData } from '../../localstorage/local'
 import colors from '../../utils/colors'
 
@@ -80,13 +80,18 @@ console.log('TES CUY');
     <View style={{padding:10, }}>
         <Text style={{fontSize:15, fontFamily:'Poppins-SemiBold'}}>Selamat Datang</Text>
          <Text style={{fontFamily:'Poppins-Regular', fontSize: 12,}}>{username || 'Guest'}</Text>
+         
+        <TouchableOpacity style={{marginTop:5}} onPress={handleLogout}>
+          <Image style={{width:22, height:22,}} source={LogOut} />
+        </TouchableOpacity>
+
     </View>
     <View style={{padding:10, top: -30}}>
         <Image style={{width:100, height:100}} source={LogoAdic} />
     </View>
     </View>
 
-    <View style={{padding:0, alignItems:'center', top: -50}}>
+    <View style={{padding:0, alignItems:'center', top: -30}}>
         
         <Carousel
         data={data}
@@ -143,7 +148,7 @@ console.log('TES CUY');
 
 
 {/* 2 */}
-<TouchableOpacity onPress={() => Linking.openURL('https://bit.ly/Quiz_Evaluasi')}  style={{alignItems:'center'}}>
+<TouchableOpacity onPress={() => navigation.navigate("QuizPage")}  style={{alignItems:'center'}}>
 <View style={{padding:10, height:60, width:60, borderRadius:5, borderWidth:1, backgroundColor:colors.secondary}}>
 <Image style={{height:40, width:40}} source={Quiz}  />
 </View>
@@ -160,14 +165,21 @@ console.log('TES CUY');
 
 
     </View>
+
+    
+    
    </View>
 
     </View>
-    <View style={{alignItems:'center', marginTop:-50}}>
-        <Image style={{width:300, height:300}} source={LogoAdic}/>
+    <View style={{alignItems:'center', marginTop:-50,}}>
+        <Image style={{width:230, height:230}} source={LogoAdic}/>
+    </View>
+    <View style={{alignItems:'center', marginTop:-50,}}>
+      <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:18, textAlign:'center'}}>AYO DUKUNG IBU CERDAS</Text>
+      <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:11, textAlign:'center'}}>DUKUNGAN PENGETAHUAN, SKILL DAN EMOSIONAL IBU DAN KELUARGA DENGAN BAYI KECIL</Text>
     </View>
     </ScrollView>
-  <Button  title="Logout" onPress={handleLogout} color={colors.secondary}  />
+  
 
     </View>
   )

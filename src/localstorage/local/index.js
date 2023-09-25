@@ -21,6 +21,6 @@ export const getData = async (key) => {
   }
 }
 
-export const RegisterURL = 'http://10.255.7.246/adic/api/register';
+export const RegisterURL = 'https://adic.okeadmin.com/api/register';
 export const LoginURL = 'http://10.255.7.246/adic/api/login';
 export  const MYAPP = 'ADIC'; 

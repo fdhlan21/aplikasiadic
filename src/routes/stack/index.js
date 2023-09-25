@@ -16,6 +16,9 @@ import ContactScreen from '../../page/contact';
 import DaftarBacaan from '../../page/daftarbaca';
 import DukunganEmosional from '../../page/dukunganemosional/dukungan_emisonal';
 import LoginScreen from '../../page/login';
+import PageQuiz from '../../page/Quiz/page';
+import KunciJawaban from '../../page/Quiz/kunci_jawaban';
+import QuizPDF from '../../page/Quiz/Quiz-PDF';
 
 
 
@@ -41,6 +44,9 @@ function MyStack() {
         <Stack.Screen name="DukunganKMC" component={KmcPdf} options={{headerShown:false}}/>
         <Stack.Screen name="DukunganEmosional" component={DukunganEmosional} options={{headerShown:false}}/>
         <Stack.Screen name="DaftarBacaan" component={DaftarBacaan} options={{headerShown:false}}/>
+        <Stack.Screen name="QuizPage" component={PageQuiz} options={{headerShown:false}}/>
+        <Stack.Screen name="KunciJawabanQuiz" component={KunciJawaban} options={{headerShown:false}}/>
+        <Stack.Screen name="Quizpdf" component={QuizPDF} options={{headerShown:false}}/>
 
 
       </Stack.Navigator>

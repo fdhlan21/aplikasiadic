@@ -58,35 +58,41 @@ console.log('TES CUY');
 
     <View style={{padding:10}}>
 
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, borderWidth:1, borderColor:'white',}}>
-    <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center'}}>Fundamentals of Nursing by Potter et al. (2017)</Text>
-    <Text style={{marginTop:10, fontFamily:'Poppins-Regular', fontSize:12, textAlign:'center'}}>Buku ini memberikan dasar-dasar keperawatan dan informasi penting tentang praktik keperawatan. Ini adalah referensi yang baik untuk memahami konsep dasar dalam perawatan pasien.</Text>
+    <View style={{padding:10, backgroundColor:colors.secondary,}}>
+      <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center',}}>REFRENSI UTAMA</Text>
+    </View>
+
+    
+    <View style={{padding:10, backgroundColor:colors.secondary, marginTop:10, }}>
+      <Text style={{fontFamily:'Poppins-semiBold', fontSize:12, textAlign:'center',}}>Hockenberry M.J. & David W. (2015), Wong’s Nursing Care of Infants and Children 10th Edition, vol. UNIT IX, T, no. 23 Pediatric Nursing Interventions and Skills, 883 Terri L. Brown.</Text>
     </View>
 
 
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, borderWidth:1, borderColor:'white', marginTop:10,}}>
-    <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center'}}>Brunner & Suddarth's Textbook of Medical-Surgical Nursing by Smeltzer et al. (2017)</Text>
-    <Text style={{marginTop:10, fontFamily:'Poppins-Regular', fontSize:12, textAlign:'center'}}>Buku ini adalah referensi yang luas tentang keperawatan medis-bedah. Ini mencakup topik-topik seperti perawatan pasien dewasa dengan berbagai kondisi medis.</Text>
+    <View style={{padding:10, backgroundColor:colors.secondary, marginTop:10, }}>
+      <Text style={{fontFamily:'Poppins-semiBold', fontSize:12, textAlign:'center',}}>Khotimah, S. K., Rahmawati, E., & Susmarini, D. (2019). Efektivitas Metode Video Dan Demonstrasi Terhadap Kangaroo Mother Care Self Efficacy. Jurnal Pendidikan Keperawatan Indonesia, 5(2), 136–145. https://doi.org/10.17509/jpki.v5i2</Text>
     </View>
 
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, borderWidth:1, borderColor:'white', marginTop:10,}}>
-    <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center'}}>Nursing Diagnosis: Application to Clinical Practice by Carpenito-Moyet (2016)</Text>
-    <Text style={{marginTop:10, fontFamily:'Poppins-Regular', fontSize:12, textAlign:'center'}}>Buku ini membahas proses diagnosis keperawatan dan aplikasinya dalam praktik klinis. Ini membantu perawat dalam mengidentifikasi masalah pasien dan merencanakan perawatan yang tepat.</Text>
+
+    <View style={{padding:10, backgroundColor:colors.secondary, marginTop:10, }}>
+      <Text style={{fontFamily:'Poppins-semiBold', fontSize:12, textAlign:'center',}}>Rahmawati, E., Susmarini D, MD Purnamasari (2020). Extremity Strengthening Exercise on Neonates Receiving Phototherapy. Jurnal Keperawatan Soedirman. 15(1). DOI:http://dx.doi.org/10.20884/1.jks.2020.15.1.1223</Text>
     </View>
 
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, borderWidth:1, borderColor:'white', marginTop:10,}}>
-    <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center'}}>"The Nature of Nursing" oleh Henderson (1966)</Text>
-    <Text style={{marginTop:10, fontFamily:'Poppins-Regular', fontSize:12, textAlign:'center'}}>Artikel ini membahas pandangan Virginia Henderson tentang perawatan dan perannya dalam perawatan pasien. Ini membantu dalam pemahaman konsep perawatan holistik.</Text>
+
+    
+    <View style={{padding:10, backgroundColor:colors.secondary, marginTop:10, }}>
+      <Text style={{fontFamily:'Poppins-semiBold', fontSize:12, textAlign:'center',}}>World Health Organization [WHO], (2022) “Care of the preterm and low-birth-weight newborn,” WHO,WHO recommendations for care of the preterm or low-birth-weight infant</Text>
     </View>
 
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, borderWidth:1, borderColor:'white', marginTop:10,}}>
-    <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center'}}>"Nursing: The Philosophy and Science of Caring" oleh Watson (1979)</Text>
-    <Text style={{marginTop:10, fontFamily:'Poppins-Regular', fontSize:12, textAlign:'center'}}>Artikel ini menguraikan filosofi Jean Watson tentang perawatan sebagai ilmu dan seni. Ini membantu dalam memahami aspek-aspek emosional dan sosial dari perawatan.</Text>
+
+    
+    <View style={{padding:10, backgroundColor:colors.secondary, marginTop:10, }}>
+      <Text style={{fontFamily:'Poppins-semiBold', fontSize:12, textAlign:'center',}}>World Health Organization [WHO] (2022). Launch of the WHO recommendations for care of the preterm or low birth weight infant. Launch of the WHO recommendations for care of the preterm or low birth weight infant</Text>
     </View>
 
-    <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, borderWidth:1, borderColor:'white', marginTop:10,}}>
-    <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center'}}>"From Novice to Expert" oleh Benner (1982)</Text>
-    <Text style={{marginTop:10, fontFamily:'Poppins-Regular', fontSize:12, textAlign:'center'}}>Artikel ini menjelaskan teori perkembangan kompetensi perawat dari tingkat pemula hingga ahli. Ini penting dalam memahami evolusi keahlian dalam keperawatan.</Text>
+
+    
+    <View style={{padding:10, backgroundColor:colors.secondary, marginTop:10, }}>
+      <Text style={{fontFamily:'Poppins-semiBold', fontSize:12, textAlign:'center',}}>Veniawati,o.,  Rahmawati,E., Susmarini, D. (2020).  Efek Video Perawatan Bayi Berat Lahir Rendah Saat Discharge Planning terhadap Keterampilan Orang Tua. Journal of Bionursing. 2020; 2(1): 28-31. DOI: https://doi.org/10.20884/bion.v2i1.34</Text>
     </View>
 
     </View>
