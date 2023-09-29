@@ -4,13 +4,15 @@ import colors from '../../../utils/colors'
 import Pdf from 'react-native-pdf'
 import Orientation from 'react-native-orientation';
 import { LeftArrow } from '../../../assets';
+import { WebView } from 'react-native-webview';
+
 
 export default function MemandikanBayi({navigation}) {
         const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/2_Memandikan_Bayi.pdf'}
+    // const source = {uri: 'bundle-assets://pdf/2_Memandikan_Bayi.pdf'}
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -36,24 +38,11 @@ export default function MemandikanBayi({navigation}) {
       <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>Memandikan Bayi</Text>
     </View>
     </View>
-
- <Pdf style={{flex:1, backgroundColor:colors.primary}} scale={1}   source={source} 
-    onLoadComplete={(numberofPages, filePath) => {
-        console.log(`Number of pages: ${numberofPages}`);
-    }}
-    onPageChanged={(page,numberOfPages) => {
-        console.log(`current page: ${page}`);
-    }}
-    onError={(error) => {
-        console.log(error);
-    }}
-    onPressLink={(uri) => {
-        console.log(`Link pressed: ${uri}`);
-    }}
- 
-    horizontal={true}
-/>
-   
+     <WebView 
+        source={{ uri: 'https://www.flipbookpdf.net/web/site/d5906302f4685ba140cc9b4d15756c6b000cdd1f202309.pdf.html'}}
+        style={{flex:1,}}
+      />
+  
     </View>
   )
 }

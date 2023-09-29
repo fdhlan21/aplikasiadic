@@ -4,13 +4,15 @@ import colors from '../../../utils/colors'
 import Pdf from 'react-native-pdf'
 import { LeftArrow } from '../../../assets'
 import Orientation from 'react-native-orientation'
+import { WebView } from 'react-native-webview';
+
 
 export default function Dukunganpengetahuanasi({navigation}) {
      const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/1_ASI.pdf'}
+    // const source = {uri: 'https://www.flipbookpdf.net/web/site/97f9d0315154fd6e0dcf0df6707c0cd06da28c4d202309.pdf.html',  cache: true}
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -37,23 +39,10 @@ export default function Dukunganpengetahuanasi({navigation}) {
     </View>
     </View>
 
- <Pdf style={{flex:1,}} scale={1}   source={source} 
-    onLoadComplete={(numberofPages, filePath) => {
-        console.log(`Number of pages: ${numberofPages}`);
-    }}
-    onPageChanged={(page,numberOfPages) => {
-        console.log(`current page: ${page}`);
-    }}
-    onError={(error) => {
-        console.log(error);
-    }}
-    onPressLink={(uri) => {
-        console.log(`Link pressed: ${uri}`);
-    }}
- 
-    horizontal={true}
-/>
-   
+      <WebView 
+        source={{ uri: 'https://www.flipbookpdf.net/web/site/97f9d0315154fd6e0dcf0df6707c0cd06da28c4d202309.pdf.html' }}
+        style={{flex:1,}}
+      />
     </View>
   )
 }

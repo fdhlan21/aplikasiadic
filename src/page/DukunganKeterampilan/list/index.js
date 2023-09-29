@@ -36,7 +36,7 @@ export default function ListDukunganKeterampilan({navigation}) {
       {/* 2 */}
       <View style={{marginTop:20, }}>
         <TouchableOpacity onPress={() => Linking.openURL('https://bit.ly/Terapi_Stimulasi_Fisik')} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
-          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Terapi Simulasi Fisik</Text>
+          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Terapi Stimulasi Fisik</Text>
         </TouchableOpacity>
       </View>
 

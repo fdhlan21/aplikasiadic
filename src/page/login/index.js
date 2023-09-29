@@ -81,10 +81,10 @@ const HandleGuest = () => {
 
     {/*  */}
     <View style={{marginTop: 20, padding:10, }}>
-    <Text style={{fontFamily:'Poppins-SemiBold', fontSize:15, }}>Nama Ibu Kandung</Text>
+    <Text style={{fontFamily:'Poppins-SemiBold', fontSize:15, }}>Nama Ibu</Text>
     <TextInput style={{backgroundColor:'#fff', color:'black', fontSize:12 , 
     fontFamily:'Poppins-Regular', borderWidth:1, height:40, borderRadius:5, paddingRight:10, paddingLeft:10 }}
-    value={form.nama} onChangeText={value => setForm({...form,nama: value})} placeholder='Silahkan masukan nama ibu kandung...' placeholderTextColor='gray' />
+    value={form.nama} onChangeText={value => setForm({...form,nama: value})} placeholder='Silahkan masukan nama ibu...' placeholderTextColor='gray' />
     </View>
 
     <View style={{marginTop: 0, padding:10, }}>
@@ -116,7 +116,7 @@ const HandleGuest = () => {
     </TouchableOpacity>
     
      <TouchableOpacity onPress={HandleGuest}  style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, marginTop:10,}}>
-    <Text style={{color:'black', fontSize:15, fontFamily:'Poppins-SemiBold', textAlign:'center'}}>Guest</Text>
+    <Text style={{color:'black', fontSize:15, fontFamily:'Poppins-SemiBold', textAlign:'center'}}>Guest (Masuk Tanpa Login)</Text>
     </TouchableOpacity>
     
     </View>

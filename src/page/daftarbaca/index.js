@@ -59,7 +59,7 @@ console.log('TES CUY');
     <View style={{padding:10}}>
 
     <View style={{padding:10, backgroundColor:colors.secondary,}}>
-      <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center',}}>REFRENSI UTAMA</Text>
+      <Text style={{fontFamily:'Poppins-Bold', fontSize:15, textAlign:'center',}}>REFERENSI UTAMA</Text>
     </View>
 
     

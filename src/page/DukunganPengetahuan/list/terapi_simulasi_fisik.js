@@ -4,13 +4,16 @@ import Orientation from 'react-native-orientation'
 import Pdf from 'react-native-pdf'
 import { LeftArrow } from '../../../assets'
 import colors from '../../../utils/colors'
+import { WebView } from 'react-native-webview';
 
 export default function TerapiStimulasFisik({navigation}) {
      const HandleBack = () => {
     navigation.goBack()
   }
 
-    const source = {uri: 'bundle-assets://pdf/5_terapi_stimulas_fisik.pdf'}
+    // const source = {uri: 'bundle-assets://pdf/5_terapi_stimulas_fisik.pdf'}
+
+
 
     useEffect(() => {
     // Set orientasi layar ke landscape saat komponen dimount
@@ -37,23 +40,11 @@ export default function TerapiStimulasFisik({navigation}) {
     </View>
     </View>
 
- <Pdf style={{flex:1, backgroundColor:colors.primary}} scale={1}   source={source} 
-    onLoadComplete={(numberofPages, filePath) => {
-        console.log(`Number of pages: ${numberofPages}`);
-    }}
-    onPageChanged={(page,numberOfPages) => {
-        console.log(`current page: ${page}`);
-    }}
-    onError={(error) => {
-        console.log(error);
-    }}
-    onPressLink={(uri) => {
-        console.log(`Link pressed: ${uri}`);
-    }}
- 
-    horizontal={true}
-/>
-   
+ <WebView 
+        source={{ uri: 'https://www.flipbookpdf.net/web/site/512bd38940f936c9fc141fbaa99447e9472ccb84202309.pdf.html'}}
+        style={{flex:1,}}
+      />
+  
     </View>
   )
 }

@@ -33,7 +33,7 @@ export default function ContactScreen({navigation}) {
     {/* NAMA TIM  */}
 
     <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:5, marginTop: 10,}}>
-    <Text style={{fontFamily:'Poppins-SemiBold'}}>Tim Pengembangan Aplikasi : <Text style={{fontFamily:'Poppins-Regular'}}>{'\n'}Eni Rahmawati, S.Kep., Ns., M.Kep.{'\n'}Dian Ramawati, S.Kep., Ns., M.Kep., Ph.D.{'\n'}Atikah Proverawati, S.Kep., Ns., M.Kep.</Text> </Text>
+    <Text style={{fontFamily:'Poppins-SemiBold'}}>Tim Pengembang Aplikasi : <Text style={{fontFamily:'Poppins-Regular'}}>{'\n'}Eni Rahmawati, S.Kep., Ns., M.Kep.{'\n'}Dian Ramawati, S.Kep., Ns., M.Kep., Ph.D.{'\n'}Atikah Proverawati, S.Kep., Ns., M.Kep.</Text> </Text>
     </View>
 
       {/* NAMA PRAKTIK  */}

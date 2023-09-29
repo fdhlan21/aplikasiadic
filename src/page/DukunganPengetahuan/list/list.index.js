@@ -58,7 +58,7 @@ export default function ListDukunganPengetahuan({navigation}) {
       {/* 5 */}
       <View style={{marginTop:20, }}>
         <TouchableOpacity onPress={() => navigation.navigate("DukunganStimulasFisik")} style={{padding:10, borderRadius:5, backgroundColor:colors.secondary, borderWidth:1, }}>
-          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Terapi Stimulas Fisik</Text>
+          <Text style={{color:'black', fontFamily:'Poppins-SemiBold', fontSize:15, textAlign:'center', }}>Terapi Stimulasi Fisik</Text>
         </TouchableOpacity>
       </View>
 
