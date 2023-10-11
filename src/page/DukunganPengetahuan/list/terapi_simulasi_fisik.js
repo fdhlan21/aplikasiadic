@@ -36,7 +36,7 @@ export default function TerapiStimulasFisik({navigation}) {
     </TouchableOpacity>
     </View>
     <View style={{ top: 0}}>
-      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>Terapi Stimulas Fisik</Text>
+      <Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'center',}}>Terapi Stimulasi Fisik</Text>
     </View>
     </View>
 
